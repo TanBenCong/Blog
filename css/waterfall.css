@@ -1,0 +1,89 @@
+/*
+	waterfall
+*/
+
+* { margin: 0; padding: 0; box-sizing: border-box;}
+
+.waterfall-container {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1180px;
+	*width: 1180px;
+	height: 1000px;
+}
+.three-cols:after {
+	content: "";
+	visibility: hidden;
+	height: 0;
+	clear: both;
+	display: block;
+}
+.respone-cols {
+	-webkit-column-gap: 0;
+	-moz-column-gap:0;
+    column-gap:0;
+    padding-top: 10px;
+}/*
+.three-cols {
+    -webkit-column-count:3;
+    -moz-column-count:3;
+    column-count:3;
+}
+.second-cols {
+    -webkit-column-count:2;
+    -moz-column-count:2;
+    column-count:2;
+}
+.one-col {
+    -webkit-column-count:1;
+    -moz-column-count:1;
+    column-count:1;	
+}*/
+.post-content {
+	
+}
+.three-cols .post-text {
+	width: 33%;
+}
+.second-cols .post-text {
+	width: 50%;
+}
+.one-col .post-text {
+	width: 100%;
+}
+.respone-cols .post-text {
+	padding: 0 8px 16px;
+	display: inline-block;
+	float: left;
+	/*width: 100%;*/
+	height: 280px;
+}
+.post-text .post-content {
+	width: 100%;
+	height: 100%;
+	-webkit-box-shadow: 0 0 6px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 0 6px rgba(0,0,0,0.2);
+	-ms-box-shadow: 0 0 6px rgba(0,0,0,0.2);
+	box-shadow: 0 0 6px rgba(0,0,0,0.2);	
+} 
+.post-text:nth-child(2n) {
+	height: 200px;
+}
+/* 窗口宽度<960,设计宽度=768 */
+@media screen and (max-width:959px){
+      .respone-cols .post-text {
+      	width: 50% !important;
+      }
+}
+/* 窗口宽度<768,设计宽度=640 */
+@media screen and (max-width:767px){
+      
+}
+/* 窗口宽度<640,设计宽度=480 */
+@media screen and (max-width:639px){
+      
+}
+/* 窗口宽度<480,设计宽度=320 */
+@media screen and (max-width:479px){
+      
+}
